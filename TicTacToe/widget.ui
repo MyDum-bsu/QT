@@ -6,16 +6,28 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>699</width>
-    <height>415</height>
+    <width>630</width>
+    <height>353</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>630</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>750</width>
+    <height>450</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>Крестики / нолики</string>
+   <string>Крестики-нолики</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="resources.qrc">
-    <normaloff>:/n/resources/images/title_ico.png</normaloff>:/n/resources/images/title_ico.png</iconset>
+   <iconset resource="resourses.qrc">
+    <normaloff>:/resourses/images/title_ico.png</normaloff>:/resourses/images/title_ico.png</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
@@ -57,11 +69,23 @@
      </item>
      <item>
       <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
        <property name="text">
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap resource="resources.qrc">:/n/resources/images/name.png</pixmap>
+        <pixmap resource="resourses.qrc">:/resourses/images/name.png</pixmap>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -102,6 +126,9 @@
            <width>0</width>
            <height>34</height>
           </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
          </property>
          <property name="text">
           <string/>
@@ -194,23 +221,29 @@
        <verstretch>0</verstretch>
       </sizepolicy>
      </property>
+     <property name="minimumSize">
+      <size>
+       <width>322</width>
+       <height>322</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
-       <width>320</width>
-       <height>320</height>
+       <width>322</width>
+       <height>340</height>
       </size>
      </property>
      <property name="styleSheet">
       <string notr="true"/>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
        <string>Игра</string>
       </attribute>
-      <layout class="QGridLayout" name="gridLayout_2">
+      <layout class="QGridLayout" name="gridLayout">
        <property name="leftMargin">
         <number>5</number>
        </property>
@@ -220,52 +253,14 @@
        <property name="rightMargin">
         <number>5</number>
        </property>
-       <property name="horizontalSpacing">
+       <property name="bottomMargin">
         <number>5</number>
        </property>
-       <item row="1" column="3">
-        <widget class="QPushButton" name="pushButton_1_1">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>100</horstretch>
-           <verstretch>100</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>100</width>
-           <height>100</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QPushButton" name="pushButton_1_0">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>100</horstretch>
-           <verstretch>100</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>100</width>
-           <height>100</height>
-          </size>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="4">
-        <widget class="QPushButton" name="pushButton_1_2">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButton_0_0">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -284,11 +279,11 @@
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QPushButton" name="pushButton_0_0">
+        <widget class="QPushButton" name="pushButton_0_1">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>100</horstretch>
-           <verstretch>100</verstretch>
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
           </sizepolicy>
          </property>
          <property name="minimumSize">
@@ -302,12 +297,91 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="3">
-        <widget class="QPushButton" name="pushButton_2_1">
+       <item row="0" column="2">
+        <widget class="QPushButton" name="pushButton_0_2">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>100</horstretch>
-           <verstretch>100</verstretch>
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushButton_1_0">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="pushButton_1_1">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="pushButton_1_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="pushButton_2_0">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
           </sizepolicy>
          </property>
          <property name="minimumSize">
@@ -322,11 +396,11 @@
         </widget>
        </item>
        <item row="2" column="1">
-        <widget class="QPushButton" name="pushButton_2_0">
+        <widget class="QPushButton" name="pushButton_2_1">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>100</horstretch>
-           <verstretch>100</verstretch>
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
           </sizepolicy>
          </property>
          <property name="minimumSize">
@@ -340,50 +414,12 @@
          </property>
         </widget>
        </item>
-       <item row="0" column="3">
-        <widget class="QPushButton" name="pushButton_0_1">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>100</horstretch>
-           <verstretch>100</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>100</width>
-           <height>100</height>
-          </size>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="4">
+       <item row="2" column="2">
         <widget class="QPushButton" name="pushButton_2_2">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>100</horstretch>
-           <verstretch>100</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>100</width>
-           <height>100</height>
-          </size>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="4">
-        <widget class="QPushButton" name="pushButton_0_2">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>100</horstretch>
-           <verstretch>100</verstretch>
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
           </sizepolicy>
          </property>
          <property name="minimumSize">
@@ -405,9 +441,9 @@
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
-        <widget class="QLabel" name="label_3">
+        <widget class="QLabel" name="aboutTextLabel">
          <property name="text">
-          <string>TextLabel</string>
+          <string>Крестики-нолики</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -424,7 +460,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="resources.qrc"/>
+  <include location="resourses.qrc"/>
  </resources>
  <connections/>
 </ui>
